@@ -1,10 +1,11 @@
-﻿int a = 15;
-int b = 3;
-int c = 9;
+﻿
 
-for (int t = 5; t>0;  t--)
+for (int i = 0; i <= 10; i++)
 {
+    if (i == 5)
+    {
+        Console.WriteLine("5입니다.");
+    }
 
-    Console.WriteLine(t);
 
 }
