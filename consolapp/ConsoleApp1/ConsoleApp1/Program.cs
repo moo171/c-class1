@@ -1,64 +1,50 @@
-﻿int score = 0;
-//Console.Write("입력해주세요. : ");
-bool status = true;
-Console.Write("반복할까요. : ");
-string Get_Input = Console.ReadLine();
-if (Get_Input == "네")
+﻿//int CountInt = 0;
+//bool Status = false;
+//string Input = Console.ReadLine();
+//if (Input == "안녕")
+//{
+//    Status = true;
+//}
+//do
+//{
+//    Console.WriteLine(CountInt);
+//    CountInt++;
+//} while (Status);
+Console.WriteLine("시작!");
+for (int i = 5; i == 0; i--)
 {
-    status = true;
+Console.WriteLine("5");
+Thread.Sleep(1000);
+Console.WriteLine("4");
+Thread.Sleep(1000);
+Console.WriteLine("3");
+Thread.Sleep(1000);
+Console.WriteLine("2");
+Thread.Sleep(1000);
+Console.WriteLine("1");
+Thread.Sleep(1000);
+Console.WriteLine("0");
 }
-else
+
+Console.WriteLine("시작");
+Thread.Sleep(1000);
+Console.WriteLine("진짜시작");
+Thread.Sleep(1000);
+Console.WriteLine("진짜진짜시작");
+Console.WriteLine("[무영의 콘솔게임]");
+Console.WriteLine("메뉴1. 던전");
+Console.WriteLine("메뉴2. 아이템창");
+while (true)
 {
-status = false;
-}
-    while (status)
+    Console.WriteLine("---------------------------------------------------");
+    Console.Write("입력란 : ");
+    string a = Console.ReadLine();
+    if (a == "던전")
     {
-        Console.Write("반복!!");
+        Console.WriteLine("던전으로 들어왔습니다");
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//Console.WriteLine(Geting_int);
-string GetRead_String = Console.ReadLine();
-switch (GetRead_String)
-{
-    case "모자":
-        Console.Write("모자를 획득했습니다.");
-        score = 5;
-        break;
-    case "사탕":
-
-        Console.Write("사탕을 획득 했습니다!!.");
-        score = 10;
-         break;
-    default:
-         Console.Write("획득실패!");
-        score = 0;
-        break ;
+    else if (a == "아이템창")
+    {
+        Console.WriteLine("아이템 리스트를 보여드리겠습니다.");
+    }
 }
-        Console.WriteLine("나의 스코어는 " +score.ToString() + "입니다.");
